@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <dialog id="start-game-dialog" >
+            <form action="">
+                <div class="players-div">
+                    <div class="player-one-div">
+                        <img src="assets/user1.png" width="100px">
+                        <label for="username-one">Player [ X ]</label>
+                        <input placeholder="player 1" id="username-one" type="text">
+                    </div>
+                    <div class="player-two-div">
+                        <img src="assets/user2.png" width="100px">
+                        <label for="username-two">Player [ O ]</label>
+                        <input placeholder="player 2" id="username-two" type="text">
+                    </div>
+                </div>
+                
+                <div class="dialog-buttons-div">
+                    <button id="start-game">Start</button>
+                </div>
+
+            </form>
+        </dialog>
+
+
+
+        <div class="game-container">
+            <h1 class="message-output">Round 1</h1>
+            <div class="board-container">
+                <div class="board"></div>
+            </div>
+            
+
+            <div class="play-again-buttons">
+                <button class="new-round" disabled>Another Round?</button>
+                <button class="new-game">New Game</button>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
